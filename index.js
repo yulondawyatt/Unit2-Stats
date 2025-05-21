@@ -4,7 +4,15 @@
  */
 function getLength(numbers) {
   // TODO
+  // Prompt the user for an array of number
+  // Calculate the the length of the array of numbers
+  // Print the length of the array to the console.
+
+  //numbers = numbers.length;
+  return numbers.length;
+  
 }
+ 
 
 /**
  * @param {number[]} numbers an array of integers
@@ -12,6 +20,12 @@ function getLength(numbers) {
  */
 function getSum(numbers) {
   // TODO
+
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i = i + 1) {
+    sum = sum + numbers[i];
+  }
+    return sum;
 }
 
 /**
@@ -20,6 +34,13 @@ function getSum(numbers) {
  */
 function getMean(numbers) {
   // TODO
+  let mean = 0;
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i = i + 1) {
+    sum = sum + numbers[i];
+    mean = sum / numbers.length;
+  }
+    return mean;
 }
 
 /**
@@ -52,7 +73,22 @@ function getRange(numbers) {
  */
 function getEvens(numbers) {
   // TODO
-}
+  // Isolate each even number as you iterate through the array
+  // Create new array of even numbers.
+  // This didn'throw an error but it didn't work
+    
+    
+  for(let i = 0; i < numbers.length; i = i + 1) {
+      
+    //   let evenArray[];
+    //   if(numbers[i] % 2 === 0 ) {
+    //   let evenArray[] = numbers[i].push;
+    // }
+      
+  }
+      return evenArray;
+} 
+
 
 /**
  * @param {number[]} numbers an array of integers
