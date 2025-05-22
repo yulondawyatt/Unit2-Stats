@@ -48,8 +48,26 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
-}
+   // TODO
+   // Get the numbers from the numbers array (numbers[])
+   // Index 0 is the first smallest number
+   // Add index 0 to the variable smallestNumber
+   // Analyze each element of numbers[] starting at index 0
+   // If the next element in numbers[] is smaller than smallestNumber make that number smallestNumber
+   // return smallest number
+
+    let smallestNumber = numbers[0];
+
+    for(i = 0; i < numbers.length; i = i + 1) {
+      let currentNumber = numbers[i];
+      if(currentNumber < smallestNumber) {
+        smallestNumber = currentNumber;
+        i++;
+      }
+      return smallestNumber;
+  }
+}   
+  
 
 /**
  * @param {number[]} numbers an array of integers
@@ -57,8 +75,22 @@ function getMin(numbers) {
  */
 function getMax(numbers) {
   // TODO
-}
+  // Check each element in the numbers array to get the largest number
+  // Set index[0] as the current number and as the largest number
+  // A number can't be larger than itself so check the next number (add 1 to index)
+  // If next number is larger than the current number it becomes the larger number
+  // return largest number
 
+  let largestNumber = numbers[0];
+  for(i = 0; i < numbers.length; i++) {
+
+    let currentNumber = numbers[i];
+    if(currentNumber > largestNumber) {
+      largestNumber = currentNumber;
+    }
+    return largestNumber;
+}
+}
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
@@ -79,15 +111,26 @@ function getEvens(numbers) {
     
     
   for(let i = 0; i < numbers.length; i = i + 1) {
-      
+    // Go through the array of numbers 
+    // If the number can be divided by 2 evenly it is an even number
+    // Push the even number into a new array
+    // return new array of even numbers.  
     //   let evenArray[];
     //   if(numbers[i] % 2 === 0 ) {
     //   let evenArray[] = numbers[i].push;
-    // }
+    //
+
+    let evensArray = [numbers[i]];
+    if(numbers[i] % 2 === 0) {
+      evensArray.push[numbers];
+      console.log(evensArray);
+    }
+    return evensArray;
+  }
       
   }
-      return evenArray;
-} 
+    
+
 
 
 /**
@@ -96,7 +139,20 @@ function getEvens(numbers) {
  */
 function getOdds(numbers) {
   // TODO
-}
+
+  let oddsArray = [numbers[i]];
+    if(numbers[i] % 2 === 0) {
+      oddsArray.push[numbers];
+      console.log(oddsArray);
+    }
+    return oddsArray;
+  }
+      
+
+
+
+
+
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
 
